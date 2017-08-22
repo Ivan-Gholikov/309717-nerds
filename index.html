@@ -8,8 +8,8 @@
   <body>
   		<header class="main-header">
   			<nav class="main-nav">
-  				 <img src="http://placehold.it/150x100" alt="лого-нердс">
-  				<ul class="site-nav"></ul>
+  				 <img src="img/header-logo.png" width="135" height="55" alt="logo-nerds">
+  				<ul class="site-nav">
   				  <li><a href="###">Студия</li>
   				  <li><a href="###">Клиенты</li>
   				  <li><a href="###">Магазин</li>
@@ -19,45 +19,77 @@
   							<a href="###">Корзина</a>
   						</div>
   			</nav>
-  			<div class="nav-content">
-  				<div class="text-content">
-  					<b>Долго, дорого, скрупулезно.</b>
-  						<p>Математически выверенный дизайн</p><br>
-  						<p>Для вашего сайта или мобильного приложения</p>
+
+  			<div class="slider">
+  				<ul class="slider-controls">
+            <li><input type="radio" id="slider-button-1" name="toogle"></input></li>
+            <li><input type="radio" id="slider-button-2" name="toogle"></input></li>
+            <li><input type="radio" id="slider-button-3" name="toogle"></input></li>
+          </ul>
+
+          <div class="slider__buttons">
+            <label for="slider-button-1"></label>
+            <label for="slider-button-2"></label>
+            <label for="slider-button-3"></label>
+          </div>
+
+          <div class="slider-slide-1">
+            <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
+            <p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="slider-button-red" href="#">Узнать больше</a>
+            <img src="img/slide-1.png" width="" height="" alt="Слайд-1">
+          </div>
+
+          <div class="visually-hidden slider-slide-2">
+            <h3 class="slider-title">Любим математику как никто другой.</h3>
+            <p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-button-red" href="#">Узнать больше</a>
+            <img src="img/slide-2.png" width="" height="" alt="Слайд-2">
+          </div>
+
+          <div class="visually-hidden slider-slide-3">
+            <h3 class="slider-title">Только ночь, только хардкор</h3>
+            <p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="slider-button-red" href="#">Узнать больше</a>
+            <img src="img/slide-3.png" width="" height="" alt="Слайд-3">
   				</div>
-  					<a href="###">Узнать больше</a>
-  					<img src="http://placehold.it/150x100" alt="img-phone-content">
-  			</div>
-  		</header>
-  	<main class="content">
-  			<div class="uslugi">
-  				<h3>Веб-сайты</h3>
-  					<img src="http://placehold.it/150x100" alt="Веб-сайты">
-  				<p>Мир никогда не будет прежним</p>
-  				<p>после того как увидит ваш сайт!</p>
-  				<a href="###">Заказать</a>
-
-  				<h3>Приложения</h3>
-  					<img src="http://placehold.it/150x100" alt="Приложения">
-  				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  				<p>после того как увидит ваш сайт!</p>
-  				<a href="###">Заказать</a>
-
-  				<h3>Презентации</h3>
-  					<img src="http://placehold.it/150x100" alt="Презентации">
-  				<p>Вы даже не подозреваете,</p>
-  				<p>насколько вы изумительны!</p>
-  				<a href="###">Заказать</a>
-  			</div>
-
-  			<div class="nerds-osebe">
-  				<h3 class="slogan">
-  					<b>Мы - маленькая, но гордая</b>
-  					<b>дизайн-студия из Краснодара</b>
-  				</h3>
-  						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет</p>
-  						<p>превыше креатива. Работаем не покладая рук, как роботы</p>
         </div>
+  		</header>
+
+  	<main class="content">
+  			<section class="uslugi">
+          <article class="service service-site">
+  				  <h3 class="uslugi-title">Веб-сайты</h3>
+  					 <img src="img/service service-site-1.png" width="240" height="125" alt="Веб-сайты">
+      				<p>Мир никогда не будет прежним</p>
+      				<p>после того как увидит ваш сайт!</p>
+      				<a class="service-site-button-red" href="###">Заказать</a>
+          </article>
+
+          <article class="service service-type">
+  				  <h3 class="uslugi-title">Приложения</h3>
+  					 <img src="img/service service-type-2.png" width="240" height="125" alt="Приложения">
+      				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+      				<p>после того как увидит ваш сайт!</p>
+      				<a class="service-type-button-green" href="###">Заказать</a>
+          </article>
+
+          <article class="service service-presentation">
+  				 <h3 class="uslugi-title">Презентации</h3>
+  					 <img src="img/service service-presentation-3.png" width="240" height="125" alt="Презентации">
+      				<p>Вы даже не подозреваете,</p>
+      				<p>насколько вы изумительны!</p>
+      				<a class="service-presentation-button-yellow" href="###">Заказать</a>
+          </article>
+        </section>
+
+  			<section class="nerds-osebe">
+          <div class="nerds-description">
+  				  <h3 class="slogan"> Мы - маленькая, но гордая
+  					   дизайн-студия из Краснодара </h3>
+  						<p class="osebe-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+  						превыше креатива. Работаем не покладая рук, как роботы</p>
+          </div>
 
   				<div class="order">
   						<b>Выполняем заказы на разработку</b>
@@ -69,7 +101,7 @@
   				</div>
 
   				<div class="nerds-statistics">
-  					<img src="http://placehold.it/150x100" alt="Лого-нердс">
+  					<img src="img/nerds-statistics-logo.jpg" width="260" height="135"  alt="лого нердс">
   					<b>С 2004 года любим точность во всем:</b>
   						<p>146%</p>
   						<p>Уровень самоотдачи</p>
@@ -78,28 +110,28 @@
   						<p>50%</p>
   						<p>Минимальная предоплата</p>
 				</div>
+        </section>
 
 				<section class="partners">
 					<ul>
 						<li>
 							<a href="###"></a>
-							<img src="http://placehold.it/150x100" alt="html-academy">
+							<img src="img/partners-academy.png" width="200" height="68" alt="academy-partners">
 						</li>
 						<li>
 							<a href="###"></a>
-							<img src="http://placehold.it/150x100" alt="barbershop">
+							<img src="img/partners-barbershop.png" width="200" height="89" alt="barbershop-partners">
 						</li>
 						<li>
 							<a href="###"></a>
-							<img src="http://placehold.it/150x100" alt="Pink">
+							<img src="img/partners-pink.png" width="185" height="50" alt="pink-partners">
 						</li>
 						<li>
 							<a href="###"></a>
-							<img src="http://placehold.it/150x100" alt="Mishka">
+							<img src="img/partners-mishka.png" width="170" height="80" alt="mishka-partners">
 						</li>
 					</ul>
 				</section>
-  			</section>
 
   	<footer class="main-footer">
   			<div class="nerds-contacts">
@@ -108,7 +140,7 @@
   				<p>ул. Б.Конюшенная, д. 19/8</p>
   				<p>тел. +7(812) 275-75-75</p>
   				<button>НАПИШИТЕ НАМ</button>
-  				<img src="http://placehold.it/150x100" alt="Maps">
+  				<img src="img/maps.jpg" width="" height="" alt="Maps">
   			</div>
   			<div class="footer-footer">
   				<ul>
@@ -123,4 +155,3 @@
   </main>
 </body>
 </html>
-
