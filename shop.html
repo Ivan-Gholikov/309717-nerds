@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   		  <header class="main-header">
         <nav class="main-nav">
-           <img src="http://placehold.it/150x100" alt="лого-нердс">
+           <img src="img/nerds-logo.svg" width="" height="" alt="лого-нердс">
           <ul class="site-nav"></ul>
             <li><a href="###">Студия</li>
             <li><a href="###">Клиенты</li>
@@ -20,23 +21,54 @@
         </nav>
           <h1 class="page-title">Магазин  готовых шаблонов</h1>
         </header>
+
   		<section class="container">
-                <fieldset>
-                  <legend>Cтоимость:</legend>
+              <form class="filters-container" method="get"></form>
+                <fieldset class="filters-range">
+                  <legend class="filters-title">Cтоимость:</legend>
                     <div class="price"></div>
-                      <label>От</label>
-                      <label>До</label>
+                      <label for="range-ot">От</label>
+                        <input type="range" min="0" max="15000" step="100" id="range-ot"></input>
+                      <label for="range-do">До</label>
                 </fieldset>
-      <fieldset>
-                  <legend>Сетка:</legend>
-                    <ul>
+      <fieldset class="filters-setka">
+                  <legend class="filters-title">Сетка:</legend>
+                      <label class="filters-property" for="adaptive">
+                        <input class="filters-adaptive" type="radio" name="choose" id="adaptive" checked></input>Адаптивная
+                      </label>
+                      <label class="filters-property" for="fixed">
+                        <input class="filters-fixed" type="radio" name="choose" id="fixed"></input>Фиксированная
+                      </label>
+                      <label class="filters-property" for="rubber">
+                        <input class="filters-rubber" type="radio" name="choose" id="rubber"></input>Резиновая
+                      </label>
+                  <!-- <ul>
                       <li>Адаптивная</li>
                       <li>Фиксированная</li>
                       <li>Резиновая</li>
-                    </ul>
+                    </ul> 
+                          !!! ТУТ НЕ ПОДОЙДЕТ СПИСОК, ПОПРОБУЮ ВСЕ ПРОПИСАТЬ ЧЕРЕЗ МЕТКУ label
+                    -->
+                    
       </fieldset>
-      <fieldset>
-                     <legend>Особенности:</legend>
+      <fieldset class="peculiar-properties">
+                     <legend class="filters-title">Особенности:</legend>
+                       <label class="filters-property" for="slider">
+                         <input class="filters-slider" type="checkbox" name="filter-slider" id="slider" checked></input>Слайдер
+                       </label>
+                       <label class="filters-property" for="benefits">
+                         <input class="filters-benefits" type="checkbox" name="filter-benefits" id="benefits"></input>Блок преймуществ
+                       </label>
+                       <label class="filters-property" for="news">
+                         <input class="filters-news" type="checkbox" name="filter-news" id="news"></input>Новости
+                       </label>
+                       <label class="filters-property" for="passage">
+                         <input class="filters-passage" type="checkbox" name="filter-passage" id="passage"></input>Галерея
+                       </label>
+                       <label class="filters-property" for="basket">
+                         <input class="filters-basket" type="checkbox" name="filter-basket" id="basket"></input>Корзина
+                       </label>
+                     <!-- <ul>
                       <ul>
                         <li>Слайдер</li>
                         <li>Блок преймуществ</li>
@@ -44,71 +76,76 @@
                         <li>Галерея</li>
                         <li>Корзина</li>
                       </ul>
-      </fieldset>
-                      <button>Показать</button>
+                          !!! ТУТ НЕ ПОДОЙДЕТ СПИСОК, ПОПРОБУЮ ВСЕ ПРОПИСАТЬ ЧЕРЕЗ МЕТКУ label
+                    -->
+                      
+        </fieldset>
+                      <button class="button-catalog-grey" type="submit">Показать</button>
+        </form>
       </section>
+
       <section class="catalog">
               <div class="sortirovka">
                   <h4>Сортировать:</h4>
-                    <ul>
-                      <li>По цене</li>
-                      <li>По типу</li>
-                      <li>По названию</li>
-                    </ul>
+                    <div class="sortirovka-type">
+                      <li><a href="###">По цене</a></li>
+                      <li><a href="###">По типу</a></li>
+                      <li><a href="###">По названию</a></li>
               </div>
-      <div class="catalog-item">
-              <div class="catalog-sedona">
-               <img src="http://placehold.it/150x100" alt="сайт седона">
-                  <h1>Sedona</h1>
+
+      <div class="items">
+      <article class="catalog-item">
+              <a href="###" class="catalog-sedona"></a>
+               <img src="img/sedona-site.jpg" width="" height="" alt="сайт седона">
+                  <b>Sedona</b>
                   <p>Информационный сайт</p>
                   <p>для туристов</p>
-                  <a class="button-sedona " href="#">9 900 Руб.</a>
-              </div>
-      </div>
-      <div class="catalog-item">
-              <div class="catalog-pink">
-               <img src="http://placehold.it/150x100" alt="сайт pink">
-                  <h1>Pink</h1>
+                  <a href="###" class="button-sedona" >9 900 Руб.</a>
+      </article>
+      <article class="catalog-item">
+              <a href="###" class="catalog-pink"></a>
+               <img src="img/pink-site.jpg" width="" height="" alt="сайт pink">
+                  <b>Pink</b>
                   <p>Информационное приложение</p>
                   <p>для ярких красок</p>
-                  <a class="button-pink" href="#">9 900 Руб.</a>
-              </div>
-      </div>
-      <div class="catalog-item">
-              <div class="catalog-barbershop">
-               <img src="http://placehold.it/150x100" alt="сайт barbershop">
-                  <h1>Barbershop Borodinski</h1>
+                  <a href="###" class="button-pink">9 900 Руб.</a>
+      </article>
+      <article class="catalog-item">
+              <a href="###" class="catalog-barbershop"></a>
+               <img src="img/barbershop-site.jpg" width="" height="" alt="сайт barbershop">
+                  <b>Barbershop Borodinski</b>
                   <p>Сайт для мужчин</p>
                   <p>с красивыми бородами</p>
-                  <a class="button-barbershop" href="#">9 900 Руб.</a>
+                  <a href="###" class="button-barbershop" >9 900 Руб.</a>
               </div>
-      </div>
-      <div class="catalog-item">
-              <div class="catalog-mishka">
-               <img src="http://placehold.it/150x100" alt="сайт mishka">
-                  <h1>Mishka</h1>
+      </article>
+      <article class="catalog-item">
+              <a href="###" class="catalog-mishka"></a>
+               <img src="img/mishka-site.jpg" width="" height="" alt="сайт mishka">
+                  <b>Mishka</b>
                   <p>Милые штуки</p>
                   <p>ручной работы для дома</p>
-                  <a class="button-mishka" href="#">9 900 Руб.</a>
+                  <a href="###" class="button-mishka">9 900 Руб.</a>
               </div>
-      </div>
-       <div class="catalog-item">
-              <div class="catalog-ucheba">
-               <img src="http://placehold.it/150x100" alt="сайт ucheba">
-                  <h1>Ucheba</h1>
+      </article>
+       <article class="catalog-item">
+              <div class="catalog-APlus">
+               <img src="img/aplus-site.jpg" width="" height="" alt="сайт Aplus">
+                  <b>A Plus</b>
                   <p>Учеба еще никогда</p>
                   <p>не была такой интересной</p>
-                  <a class="button-ucheba" href="#">9 900 Руб.</a>
+                  <a href="###" class="button-APlus" >9 900 Руб.</a>
               </div>
-      </div>
-      <div class="catalog-item">
-              <div class="catalog-kvas">
-               <img src="http://placehold.it/150x100" alt="сайт kvas">
-                  <h1>КВАС</h1>
+      </article>
+      <article class="catalog-item">
+              <div class="catalog-kvast">
+               <img src="img/kvast-site.jpg" width="" height="" alt="сайт kvast">
+                  <h1>Крафтовый квас</h1>
                   <p>Крафтовый квас</p>
                   <p>всему голова!</p>
-                  <a class="button-kvas" href="#">9 900 Руб.</a>
+                  <a href="###" class="button-kvast" >9 900 Руб.</a>
               </div>
+      </article>
       </div>
             <div class="pagination">
                  <li><a href="#">1</a></li>
