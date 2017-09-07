@@ -40,7 +40,7 @@
                 <fieldset class="filters-range-field">
                   <div class="cost-controls">
                     <div class="cost-scale">
-                    <div class="scale__slider"></div>
+                    <div class="scale-slider"></div>
                     </div>
                     <div class="toogle toogle-min"></div>
                     <div class="toogle toogle-max"></div>
@@ -57,25 +57,25 @@
               <fieldset class="filters-radio">
                 <legend class="filters-title">Сетка:</legend>
                   <input class="visually-hidden" type="radio" id="adaptive" name="grid-type" checked>
-                  <label for="adaptive">Адаптивная</label>
+                  <label for="adaptive"><span></span>Адаптивная</label>
                   <input class="visually-hidden" type="radio" id="fixed" name="grid-type">
-                  <label for="fixed">Фиксированная</label>
+                  <label for="fixed"><span></span>Фиксированная</label>
                   <input class="visually-hidden" type="radio" id="rubbery" name="grid-type">
-                  <label for="rubbery">Резиновая</label>
+                  <label for="rubbery"><span></span>Резиновая</label>
               </fieldset>
 
               <fieldset class="filters-checkbox">
                 <legend class="filters-title">Особенности:</legend>
                 <input class="visually-hidden"  type="checkbox" id="slider" name="slider-checkbox" checked>
-                <label for="slider">Слайдер</label>
+                <label for="slider"><span></span>Слайдер</label>
                 <input class="visually-hidden" type="checkbox" id="features" name="features-checkbox">
-                <label for="features">Блок преимуществ</label>
+                <label for="features"><span></span>Блок преимуществ</label>
                 <input class="visually-hidden" type="checkbox" id="news" name="news-checkbox" checked>
-                <label for="news">Новости</label>
+                <label for="news"><span></span>Новости</label>
                 <input class="visually-hidden" type="checkbox" id="gallery" name="gallery-checkbox">
-                <label for="gallery">Галерея</label>
+                <label for="gallery"><span></span>Галерея</label>
                 <input class="visually-hidden" type="checkbox" id="basket" name="basket-checkbox">
-                <label for="basket">Корзина</label>
+                <label for="basket"><span></span>Корзина</label>
               </fieldset>
                 <button class="form-button button-grey" type="submit">Показать</button>
             </form>
@@ -106,7 +106,7 @@
                   <a class="catalog-link" href="#">Sedona</a>
                 </h2>
                 <span class="catalog-description">Информационный сайт для туристов</span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -120,7 +120,7 @@
                 </h2>
                 <span class="catalog-description">Продуктовый лендинг
                 приложения для iOS и Android</span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -133,7 +133,7 @@
                   <a class="catalog-link" href="#">Barbershop Borodinski</a>
                 </h2>
                 <span class="catalog-description">Сайт для мужчин, с красивыми бородами</span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -146,7 +146,7 @@
                   <a class="catalog-link" href="#">Mishka</a>
                 </h2>
                 <span class="catalog-description">Милые штуки,ручной работы для дома</span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -159,7 +159,7 @@
                   <a class="catalog-link" href="#">A Plus</a>
                 </h2>
                 <span class="catalog-description">Учеба еще никогда,не была такой интересной</span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -172,7 +172,7 @@
                   <a class="catalog-link" href="#">Крафтовый квас</a>
                 </h2>
                 <span class="catalog-description">Крафтовый квас, всему голова! </span>
-                <a class="catalog-button" href="#">9 990 руб.</a>
+                <a class="catalog-btn" href="#">9 990 руб.</a>
               </div>
             </article>
 
@@ -189,7 +189,7 @@
           <form class="modal-write-name" action="#" method="post">
             <fieldset class="modal-write-name">
               <legend class="modal-write-title">Напишите нам
-                <button class="modal-write-button modal-write-button-close">Закрыть</button>
+                <button class="modal-write-btn modal-write-btn-close">Закрыть</button>
               </legend>
               <label for="name">Ваше имя:<br><input type="text" id="name" name="name" placeholder="Ваше имя, пожалуйста" required></label>
             </fieldset>
@@ -200,7 +200,7 @@
               <label for="message">Текст письма</label>
               <textarea class="modal-write-text" id="message" name="message" placeholder="В свободной форме" required></textarea>
             </fieldset>
-            <button class="modal-write-button modal-write-button-submit">Отправить</button>
+            <button class="modal-write-btn modal-write-btn-submit">Отправить</button>
           </form>
         </div>
         </div>
@@ -236,6 +236,7 @@
         </div>
       </div>
       </footer>
+      <script src="js/script.js"></script>
     </body>
   </html>
 
