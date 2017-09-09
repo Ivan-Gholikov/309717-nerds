@@ -1,6 +1,4 @@
 body {
-	width: 1440px;
-	margin: 0 auto;
 	font-family: "Roboto", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -16,18 +14,11 @@ a {
 	text-decoration: none;
 	display: flex;
 }
-.header-contanier,
-.main-contanier,
-.slider-contanier,
-.contacts-contanier,
-.footer-contanier {
-	width: 1160px;
+.contanier {
+	width: 1200px;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 0;
 }
+
 .header-contanier,
 .slider-contanier {
 	background-color: #eeeeee;
@@ -39,7 +30,7 @@ a {
 	height: 1px;
 	margin: -1px;
 }
-.contacts__contanier {
+.contacts-contanier {
 	width: 1440px;
 }
 .header {
