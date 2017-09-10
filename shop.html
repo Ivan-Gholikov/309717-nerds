@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
-  		  <header class="main-header">
-          <div class="header-contanier">
+  		  <header class="header">
+             <div class="header-contanier">
           <h1 class="visually-hidden">Веб-студия Нердс</h1>
         <nav class="nav">
           <div class="logo-nav">
@@ -18,26 +18,23 @@
           <ul class="site-nav">
             <li><a class="item-nav" href="index.html">Студия</a></li>
             <li><a class="item-nav" href="#">Клиенты</a></li>
-            <li><a class="item-nav item-nav-active" href="catalog.html">Магазин</a></li>
+            <li><a class="item-nav item-nav-active" href="shop.html">Магазин</a></li>
             <li><a class="item-nav item-nav-contacts" href="#">Контакты</a></li>
           </ul>
           <div class="basket-nav"><a class="basket-nav-link" href="#">Корзина</a></div>
         </nav>
-          <h2 class="page-title">Магазин  готовых шаблонов</h2>
+          <h2 class="header-title">Магазин  готовых шаблонов</h2>
           </div>
         </header>
 
-
-
-
   		<main class="main">
         <div class="main-contanier">
-          <div class="filters">
+          <div class="filter">
             <span class="visually-hidden">Фильтр готовых шаблонов:</span>
-            <span class="filters-title filters-title-cost">Стоимость:</span>
-            <form class="filters-form" action="get">
-              <div class="wrapper-filters-range">
-                <fieldset class="filters-range-field">
+            <span class="filter-title filter-title-cost">Стоимость:</span>
+            <form class="filter-form" action="get">
+              <div class="wrapper-filter-range">
+                <fieldset class="filter-range-field">
                   <div class="cost-controls">
                     <div class="cost-scale">
                     <div class="scale-slider"></div>
@@ -49,13 +46,13 @@
                   <label class="cost-left">От</label>
                   <input class="price-range price-range-min" type="text" name="min-cost" value="0" placeholder="0">
                   <label class="cost-right">До</label>
-                  <input class="price-range price-range-max" type="text" name="max-cost" value="20000" placeholder="20000">
+                  <input class="price-range price-range-max" type="text" name="max-cost" value="15 000" placeholder="15000">
                 </div>
                 </fieldset>
               </div>
 
-              <fieldset class="filters-radio">
-                <legend class="filters-title">Сетка:</legend>
+              <fieldset class="filter-radio">
+                <legend class="filter-title">Сетка:</legend>
                   <input class="visually-hidden" type="radio" id="adaptive" name="grid-type" checked>
                   <label for="adaptive"><span></span>Адаптивная</label>
                   <input class="visually-hidden" type="radio" id="fixed" name="grid-type">
@@ -64,8 +61,8 @@
                   <label for="rubbery"><span></span>Резиновая</label>
               </fieldset>
 
-              <fieldset class="filters-checkbox">
-                <legend class="filters-title">Особенности:</legend>
+              <fieldset class="filter-checkbox">
+                <legend class="filter-title">Особенности:</legend>
                 <input class="visually-hidden"  type="checkbox" id="slider" name="slider-checkbox" checked>
                 <label for="slider"><span></span>Слайдер</label>
                 <input class="visually-hidden" type="checkbox" id="features" name="features-checkbox">
@@ -77,7 +74,7 @@
                 <input class="visually-hidden" type="checkbox" id="basket" name="basket-checkbox">
                 <label for="basket"><span></span>Корзина</label>
               </fieldset>
-                <button class="form-button button-grey" type="submit">Показать</button>
+                <button class="form-button form-button-grey" type="submit">Показать</button>
             </form>
           </div>
 
@@ -95,8 +92,7 @@
               <button class="sortirovka-direction sortirovka-direction-down">Вниз</button>
               </span>
             </div>
-            <!-- В секшин заключаю article.
-            -->
+
             <article class="catalog-item">
               <a class="catalog-img" href="#">
               <img src="img/sedona-site.jpg" width="360" height="576" alt="сайт седона">
@@ -177,8 +173,8 @@
             </article>
 
             <div class="pagination">
-              <a class="pagination-item pagination-item-view visually-hiden" href="#">Предыдущая</a>
-              <a class="pagination-item pagination-item-one" href="#">1</a>
+              <a class="pagination-item pagination-item-preview visually-hiden" href="#">Предыдущая</a>
+              <a class="pagination-item pagination-item-current" href="#">1</a>
               <a class="pagination-item" href="#">2</a>
               <a class="pagination-item" href="#">3</a>
               <a class="pagination-item pagination-item-next" href="#">Следующая</a>
@@ -186,7 +182,7 @@
           </section>
 
           <div class="modal-write">
-          <form class="modal-write-name" action="#" method="post">
+          <form class="modal-write-form" action="#" method="post">
             <fieldset class="modal-write-name">
               <legend class="modal-write-title">Напишите нам
                 <button class="modal-write-btn modal-write-btn-close">Закрыть</button>
@@ -194,7 +190,7 @@
               <label for="name">Ваше имя:<br><input type="text" id="name" name="name" placeholder="Ваше имя, пожалуйста" required></label>
             </fieldset>
             <fieldset class="modal-write-email">
-              <label for="email">Ваш E-mail:<br><input type="email" id="email" placeholder="Для отправки ответа" required></label>
+              <label for="email">Ваш E-mail:<br><input type="email" id="email" name="email" placeholder="Для отправки ответа" required></label>
             </fieldset>
             <fieldset class="modal-write-message">
               <label for="message">Текст письма</label>
@@ -207,7 +203,7 @@
 
         <div class="contacts-contanier">
           <section class="contacts">
-            <h2 class="vissualy-hidden">Контакты</h2>
+            <h2 class="visually-hidden">Контакты</h2>
             <div class="location-location">
               <span class="contacts-title">Nerds Design Studio</span>
               <p>191186, Санкт-Петербург,<br>
@@ -224,7 +220,7 @@
       <div class="footer-contanier">
         <div class="footer-social">
           <ul class="footer-social-list">
-            <li class="footer-social-item footer-social-item-VK"><a class="visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a></li>
+            <li class="footer-social-item footer-social-item-VK"><a class="visually-hidden" href="https://vk.com/htmlacademy.ru">Vkontakte</a></li>
             <li class="footer-social-item footer-social-item-Facebook"><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Facebook</a></li>
             <li class="footer-social-item footer-social-item-Instagram"><a class="visually-hidden" href="https://www.instagram.com/htmlacademy">Instagram</a></li>
           </ul>
@@ -235,10 +231,10 @@
             </div>
         </div>
       </div>
-      </footer>
-      <script src="js/script.js"></script>
+    </footer>
+    <script src="js/script.js"></script>
     </body>
-  </html>
+    </html>
 
 
 

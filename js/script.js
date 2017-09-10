@@ -1,4 +1,4 @@
-var modalBtnOpen = document.querySelector('.contacts-btn');
+var modalBtnOpen = document.querySelector('.contacts-button');
 var modalBtnClose = document.querySelector('.modal-write-btn-close');
 var modalModalPopup = document.querySelector('.modal-write');
 
