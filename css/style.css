@@ -1,6 +1,4 @@
 body {
-	width: 1440px;
-	margin: 0 auto;
 	font-family: "Roboto", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -22,17 +20,11 @@ body, html {
     -ms-text-size-adjust: none;
     text-size-adjust: none;
 }
-.header-contanier,
-.main-contanier,
-.slider-contanier,
-.contacts-contanier,
-.footer-contanier {
+
+.container {
 	width: 1160px;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 0;
+	padding: 0 20px;
 }
 .header-contanier,
 .slider-contanier {
@@ -54,7 +46,6 @@ body, html {
 	background-color: #eeeeee;
 }
 .nav {
-	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	padding-top: 49px;
@@ -439,8 +430,7 @@ body, html {
 	justify-content: space-between;
 	margin-top: 50px;
 }
-.partners {
-	width: 100%;
+.partners-field {
 	padding: 44px 34px;
 	padding-right: 40px;
 	display: flex;
@@ -512,6 +502,11 @@ body, html {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
+}
+
+.shop-fields {
+	display: flex;
+	justify-content: space-between;
 }
 .filter {
 	width: 260px;
@@ -893,13 +888,17 @@ input[type="checkbox"] + label span:hover {
 	width: 260px;
 	height: 50px;
 }
+
+.contacts-field {
+	background-image: url(../img/maps.png);
+	width: 1440px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+
 .contacts {
 	display: flex;
 	align-items: center;
-	width: 1440px;
-	margin: 0 auto;
-	background-image: url(../img/maps.png);
-	background-color: #eeeeee;
 	min-height: 410px;
 	margin-bottom: 70px;
 }
@@ -910,7 +909,6 @@ input[type="checkbox"] + label span:hover {
 	width: 320px;
 	height: 310px;
 	background-color: #ffffff;
-	margin-left: 140px;
 }
 .contacts-title {
 	display: flex;
